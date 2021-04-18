@@ -11,6 +11,7 @@ class FlutterINFrenchApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    precacheImage(AssetImage("assets/logo_header.png"), context);
     return MaterialApp(
       title: "FlutterINFrench",
       initialRoute: "/",

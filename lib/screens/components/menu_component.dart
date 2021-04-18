@@ -10,7 +10,15 @@ class MenuComponent extends StatelessWidget {
       child: Column(children: <Widget>[
         DrawerHeader(
           // child: Center(child: Text("Flutter IN French ")),
-          child: Image.asset('assets/logo_header.png'),
+          child: Column(
+            children: <Widget>[
+              Expanded(child: Image.asset('assets/logo_header.png')),
+              SizedBox(
+                height: 15.0,
+              ),
+              Text("IN'French"),
+            ],
+          ),
         ),
         Expanded(
           child: ListView(
